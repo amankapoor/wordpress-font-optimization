@@ -489,21 +489,17 @@ class AdminViewFonts extends AdminViewBase
         }
 
         $cacheHash = md5(json_encode($cacheHashData));
-        $cacheFile = $this->cache->path('fonts', 'google_webfonts_api', $cacheHash);
 
         // verify cache data
-        $fontInfo = false;
-        if ($cacheFile) {
-            $fontInfo = $this->cache->get('fonts', 'google_webfonts_api', $cacheHash, true);
-            if ($fontInfo) {
-                try {
-                    $fontInfo = $this->json->parse($fontInfo, true);
-                } catch (\Exception $err) {
-                    $fontInfo = false;
-                }
-            } else {
+        $fontInfo = $this->cache->get('fonts', 'google_webfonts_api', $cacheHash, true);
+        if ($fontInfo) {
+            try {
+                $fontInfo = $this->json->parse($fontInfo, true);
+            } catch (\Exception $err) {
                 $fontInfo = false;
             }
+        } else {
+            $fontInfo = false;
         }
 
         if (!$fontInfo) {
