@@ -54,7 +54,7 @@ class Fonts extends Controller implements Controller_Interface
     protected function setup()
     {
         // disabled
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('fonts')) {
             return;
         }
 
@@ -108,7 +108,7 @@ class Fonts extends Controller implements Controller_Interface
      */
     final private function setup_fontface()
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('fonts')) {
             return;
         }
 
@@ -253,7 +253,7 @@ class Fonts extends Controller implements Controller_Interface
      */
     final private function setup_observer()
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('fonts')) {
             return;
         }
 
@@ -337,7 +337,7 @@ class Fonts extends Controller implements Controller_Interface
      */
     final private function setup_gfl()
     {
-        if (!$this->env->is_optimization()) {
+        if (!$this->env->enabled('fonts')) {
             return;
         }
         
