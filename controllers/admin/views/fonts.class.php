@@ -43,7 +43,8 @@ class AdminViewFonts extends AdminViewBase
             'AdminAjax',
             'AdminClient',
             'AdminOptions',
-            'url'
+            'url',
+            'AdminFonts'
         ));
     }
     
@@ -89,14 +90,7 @@ class AdminViewFonts extends AdminViewBase
      */
     final public function help_tab()
     {
-        $data = array(
-            'name' => __('Web Font Optimization', 'o10n'),
-            'github' => 'https://github.com/o10n-x/wordpress-font-optimization',
-            'wordpress' => 'https://wordpress.org/plugins/web-font-optimization/',
-            'docs' => 'https://github.com/o10n-x/wordpress-font-optimization/tree/master/docs'
-        );
-
-        return $data;
+        return $this->AdminFonts->help_tab();
     }
 
     /**
