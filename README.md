@@ -30,6 +30,32 @@ A recent update of all plugins contains a easy single click install button.
 ![image](https://user-images.githubusercontent.com/8843669/39661507-cc1eac5e-5052-11e8-8fba-33c0cc959b07.png)
 </details>
 
+## Description
+
+This plugin is a toolkit for professional web font optimization. 
+
+The plugin provides an advanced management solution for the following font loading technologies:
+
+* [Font Face API](https://developer.mozilla.org/nl/docs/Web/API/FontFace)
+* [Font Face Observer](https://fontfaceobserver.com/)
+* [Google Font Loader](https://developers.google.com/fonts/docs/webfont_loader)
+
+The plugin contains many unique innovations such as async and timed font loading and/or rendering which enables to load and/or render fonts only on specific screen sizes/devices using a [Media Query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), when an element scrolls into view or using methods for page load time optimization purposes (`requestAnimationFrame` with frame targeting and more). Timed font loading is available for all loading strategies. 
+
+![Font Face API Configuration](https://github.com/o10n-x/font-optimization/blob/master/docs/images/font-face-api-json-editor.png)
+![Font Face Observer Configuration](https://github.com/o10n-x/font-optimization/blob/master/docs/images/font-face-observer-json-editor.png)
+![Google Font Loader Configuration](https://github.com/o10n-x/font-optimization/blob/master/docs/images/google-font-loader-editor.png)
+
+With debug modus enabled, the browser console will show detailed information about the font loading and rendering process including a [Performance API](https://developer.mozilla.org/nl/docs/Web/API/Performance) result for an insight in the font loading performance of any given configuration.
+
+![Debug info in Browser Console](https://github.com/o10n-x/font-optimization/blob/master/docs/images/console-performance.png)
+
+The plugin contains a tool to download and install Google fonts locally for a theme, it provides an option to push fonts using HTTP/2 Server Push, it enables to remove linked fonts from HTML and CSS source code (`<link rel="stylesheet">` and `@import` links) and to remove Google Font Loader from HTML and javascript source code.
+
+![Google Font Downloader](https://github.com/o10n-x/font-optimization/blob/master/docs/images/google-font-downloader.png)
+
+Additional features can be requested on the [Github forum](https://github.com/o10n-x/wordpress-font-optimization/issues).
+
 ## WordPress WPO Collection
 
 This plugin is part of a Website Performance Optimization collection that include [CSS](https://github.com/o10n-x/wordpress-css-optimization), [Javascript](https://github.com/o10n-x/wordpress-javascript-optimization), [HTML](https://github.com/o10n-x/wordpress-html-optimization), [HTTP/2](https://github.com/o10n-x/wordpress-http2-optimization), [Progressive Web App (Service Worker)](https://github.com/o10n-x/wordpress-pwa-optimization) and [Security Header](https://github.com/o10n-x/wordpress-security-header-optimization) optimization. 
@@ -63,21 +89,3 @@ For SEO it is therefor simple: websites will need to meet the standards set by t
 A perfect Google Lighthouse Score includes validation of a website as a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/).
 
 Google offers another new website performance test that is much tougher than the Google PageSpeed score. It is based on a AI neural network and it can be accessed on https://testmysite.thinkwithgoogle.com
-
-## Description
-
-This plugin is a toolkit for professional web font optimization. 
-
-The plugin provides an advanced management solution for the following font loading technologies:
-
-* [Font Face API](https://developer.mozilla.org/nl/docs/Web/API/FontFace)
-* [Font Face Observer](https://fontfaceobserver.com/)
-* [Google Font Loader](https://developers.google.com/fonts/docs/webfont_loader)
-
-The plugin contains many unique innovations such as async and timed font loading and/or rendering which enables to load and/or render fonts only on specific screen sizes/devices using a [Media Query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), when an element scrolls into view or using methods for page load time optimization purposes (`requestAnimationFrame` with frame targeting and more). Timed font loading is available for all loading strategies. 
-
-With debug modus enabled, the browser console will show detailed information about the font loading and rendering process including a [Performance API](https://developer.mozilla.org/nl/docs/Web/API/Performance) result for an insight in the font loading performance of any given configuration.
-
-The plugin contains a tool to download and install Google fonts locally for a theme, it provides an option to push fonts using HTTP/2 Server Push, it enables to remove linked fonts from HTML and CSS source code (`<link rel="stylesheet">` and `@import` links) and to remove Google Font Loader from HTML and javascript source code.
-
-Additional features can be requested on the [Github forum](https://github.com/o10n-x/wordpress-font-optimization/issues).
