@@ -534,7 +534,7 @@ class AdminViewFonts extends AdminViewBase
         $request = $this->AdminAjax->request();
 
         // verify if PHP supports ZIP
-        if (!class_exists('ZipArchive')) {
+        if (!class_exists('\ZipArchive')) {
             $request->output_errors('Your PHP installation does not support <a href="http://php.net/manual/en/ziparchive.extractto.php" target="_blank">ZipArchive</a>.');
         }
 
